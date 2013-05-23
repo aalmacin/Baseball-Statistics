@@ -4,18 +4,18 @@
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div>
         At Bats: <asp:TextBox runat="server" id="txtAtBats"></asp:TextBox>
-        <asp:CompareValidator ID="validatePositiveAtBats" runat="server" ErrorMessage="At Bats must have a positive value." 
+        <asp:CompareValidator ID="validatePositiveAtBats" runat="server" ErrorMessage="At Bats must be an integer with a positive value." 
             ControlToValidate="txtAtBats" Operator="GreaterThanEqual" 
-            ValueToCompare="0" Display="Dynamic"></asp:CompareValidator>
+            ValueToCompare="0" Display="Dynamic" Type="Integer"></asp:CompareValidator>
         <asp:RequiredFieldValidator ID="validatePresenceAtBats" runat="server" 
             ErrorMessage="At Bats Required." ControlToValidate="txtAtBats" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
     </div>
     <div>
         Hits: <asp:TextBox runat="server" id="txtHits"></asp:TextBox>
-        <asp:CompareValidator ID="validatePositiveHits" runat="server" ErrorMessage="Hits must have a positive value." 
+        <asp:CompareValidator ID="validatePositiveHits" runat="server" ErrorMessage="Hits must be an integer with a positive value." 
             ControlToValidate="txtHits" Operator="GreaterThanEqual" ValueToCompare="0" 
-            Display="Dynamic"></asp:CompareValidator>
+            Display="Dynamic" Type="Integer"></asp:CompareValidator>
         <asp:CompareValidator ID="validateHitsLessThanAtBats" runat="server" ErrorMessage="Number of hits cannot be greater than at bats." 
             ControlToValidate="txtHits" Operator="LessThanEqual" 
             ControlToCompare="txtAtBats" Display="Dynamic"></asp:CompareValidator>
@@ -25,18 +25,18 @@
     </div>
     <div>
         Walks: <asp:TextBox runat="server" id="txtWalks"></asp:TextBox>
-        <asp:CompareValidator ID="validatePositiveWalks" runat="server" ErrorMessage="Walks must have a positive value." 
+        <asp:CompareValidator ID="validatePositiveWalks" runat="server" ErrorMessage="Walks must be an integer with a positive value." 
             ControlToValidate="txtWalks" Operator="GreaterThanEqual" 
-            ValueToCompare="0" Display="Dynamic"></asp:CompareValidator>
+            ValueToCompare="0" Display="Dynamic" Type="Integer"></asp:CompareValidator>
         <asp:RequiredFieldValidator ID="validatePresenceWalks" runat="server" 
             ErrorMessage="Walks Required." ControlToValidate="txtWalks" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
     </div>
     <div>
         Hit By Pitch: <asp:TextBox runat="server" id="txtHitByPitch"></asp:TextBox>
-        <asp:CompareValidator ID="validatePositiveHitByPitch" runat="server" ErrorMessage="Hit By Pitch must have a positive value." 
+        <asp:CompareValidator ID="validatePositiveHitByPitch" runat="server" ErrorMessage="Hit By Pitch must be an integer with a positive value." 
             ControlToValidate="txtHitByPitch" Operator="GreaterThanEqual" 
-            ValueToCompare="0" Display="Dynamic"></asp:CompareValidator>
+            ValueToCompare="0" Display="Dynamic" Type="Integer"></asp:CompareValidator>
         <asp:RequiredFieldValidator ID="validatePresenceHitByPitch" runat="server" 
             ErrorMessage="Hit by Pitch Required." ControlToValidate="txtHitByPitch" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
