@@ -13,5 +13,16 @@ namespace Assignment1
         {
 
         }
+
+        protected void btnCalculate_Click(object sender, EventArgs e)
+        {
+            if (dllStatType.SelectedValue == "Batting Average")
+            {
+            }
+            else
+            {
+
+            }
+        }
     }
 }
