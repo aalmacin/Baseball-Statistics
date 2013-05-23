@@ -22,13 +22,22 @@ namespace Assignment1 {
         protected global::System.Web.UI.WebControls.TextBox txtAtBats;
         
         /// <summary>
-        /// validateAtBats control.
+        /// validatePositiveAtBats control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validateAtBats;
+        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveAtBats;
+        
+        /// <summary>
+        /// validatePresenceAtBats control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validatePresenceAtBats;
         
         /// <summary>
         /// txtHits control.
@@ -40,6 +49,33 @@ namespace Assignment1 {
         protected global::System.Web.UI.WebControls.TextBox txtHits;
         
         /// <summary>
+        /// validatePositiveHits control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveHits;
+        
+        /// <summary>
+        /// validateHitsLessThanAtBats control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator validateHitsLessThanAtBats;
+        
+        /// <summary>
+        /// validatePresenceHits control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validatePresenceHits;
+        
+        /// <summary>
         /// txtWalks control.
         /// </summary>
         /// <remarks>
@@ -49,6 +85,24 @@ namespace Assignment1 {
         protected global::System.Web.UI.WebControls.TextBox txtWalks;
         
         /// <summary>
+        /// validatePositiveWalks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveWalks;
+        
+        /// <summary>
+        /// validatePresenceWalks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validatePresenceWalks;
+        
+        /// <summary>
         /// txtHitByPitch control.
         /// </summary>
         /// <remarks>
@@ -56,6 +110,24 @@ namespace Assignment1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtHitByPitch;
+        
+        /// <summary>
+        /// validatePositiveHitByPitch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveHitByPitch;
+        
+        /// <summary>
+        /// validatePresenceHitByPitch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validatePresenceHitByPitch;
         
         /// <summary>
         /// btnCalculate control.

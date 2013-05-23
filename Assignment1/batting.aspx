@@ -4,16 +4,33 @@
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div>
         At Bats: <asp:TextBox runat="server" id="txtAtBats"></asp:TextBox>
-        <asp:CompareValidator ID="validateAtBats" runat="server" ErrorMessage="At bats must be positive." ControlToValidate="txtAtBats" Operator="GreaterThanEqual" ValueToCompare="0"></asp:CompareValidator>
+        <asp:CompareValidator ID="validatePositiveAtBats" runat="server" ErrorMessage="At Bats must have a positive value." 
+            ControlToValidate="txtAtBats" Operator="GreaterThanEqual" ValueToCompare="0"></asp:CompareValidator>
+        <asp:RequiredFieldValidator ID="validatePresenceAtBats" runat="server" 
+            ErrorMessage="At Bats Required." ControlToValidate="txtAtBats" ></asp:RequiredFieldValidator>
     </div>
     <div>
         Hits: <asp:TextBox runat="server" id="txtHits"></asp:TextBox>
+        <asp:CompareValidator ID="validatePositiveHits" runat="server" ErrorMessage="Hits must have a positive value." 
+            ControlToValidate="txtHits" Operator="GreaterThanEqual" ValueToCompare="0"></asp:CompareValidator>
+        <asp:CompareValidator ID="validateHitsLessThanAtBats" runat="server" ErrorMessage="Number of hits cannot be greater than at bats." 
+            ControlToValidate="txtHits" Operator="LessThanEqual" ControlToCompare="txtAtBats"></asp:CompareValidator>
+        <asp:RequiredFieldValidator ID="validatePresenceHits" runat="server" 
+            ErrorMessage="Hits Required." ControlToValidate="txtHits" ></asp:RequiredFieldValidator>
     </div>
     <div>
         Walks: <asp:TextBox runat="server" id="txtWalks"></asp:TextBox>
+        <asp:CompareValidator ID="validatePositiveWalks" runat="server" ErrorMessage="Walks must have a positive value." 
+            ControlToValidate="txtWalks" Operator="GreaterThanEqual" ValueToCompare="0"></asp:CompareValidator>
+        <asp:RequiredFieldValidator ID="validatePresenceWalks" runat="server" 
+            ErrorMessage="Walks Required." ControlToValidate="txtWalks" ></asp:RequiredFieldValidator>
     </div>
     <div>
         Hit By Pitch: <asp:TextBox runat="server" id="txtHitByPitch"></asp:TextBox>
+        <asp:CompareValidator ID="validatePositiveHitByPitch" runat="server" ErrorMessage="Hit By Pitch must have a positive value." 
+            ControlToValidate="txtHitByPitch" Operator="GreaterThanEqual" ValueToCompare="0"></asp:CompareValidator>
+        <asp:RequiredFieldValidator ID="validatePresenceHitByPitch" runat="server" 
+            ErrorMessage="Hit by Pitch Required." ControlToValidate="txtHitByPitch" ></asp:RequiredFieldValidator>
     </div>
     <asp:Button runat="server" ID="btnCalculate" Text="Calculate" />
 </asp:Content>
