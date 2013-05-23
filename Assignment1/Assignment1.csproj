@@ -56,6 +56,7 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="pitching.aspx" />
+    <Content Include="slugging.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="batting.aspx" />
     <Content Include="Global.asax" />
@@ -130,6 +131,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="slugging.aspx.cs">
+      <DependentUpon>slugging.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="slugging.aspx.designer.cs">
+      <DependentUpon>slugging.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

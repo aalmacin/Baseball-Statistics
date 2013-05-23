@@ -22,6 +22,7 @@
                     <Items>
                         <asp:MenuItem NavigateUrl="~/batting.aspx" Text="Batting"/>
                         <asp:MenuItem NavigateUrl="~/pitching.aspx" Text="Pitching"/>
+                        <asp:MenuItem NavigateUrl="~/slugging.aspx" Text="Slugging"/>
                     </Items>
                 </asp:Menu>
             </div>
