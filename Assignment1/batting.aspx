@@ -32,5 +32,11 @@
         <asp:RequiredFieldValidator ID="validatePresenceHitByPitch" runat="server" 
             ErrorMessage="Hit by Pitch Required." ControlToValidate="txtHitByPitch" ></asp:RequiredFieldValidator>
     </div>
+    <div>
+        <asp:DropDownList runat="server" ID="dllStatType">
+            <asp:Listitem Value="Batting Average" Text="Batting Average"></asp:Listitem>
+            <asp:Listitem Value="On-Base %" Text="On-Base %"></asp:Listitem>
+        </asp:DropDownList>
+    </div>
     <asp:Button runat="server" ID="btnCalculate" Text="Calculate" />
 </asp:Content>
