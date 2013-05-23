@@ -14,15 +14,15 @@ namespace Assignment1
 
         }
 
-        protected void btnCalculate_Click(object sender, EventArgs e)
+        protected void btnCalculateBatting_Click(object sender, EventArgs e)
         {
             if (dllStatType.SelectedValue == "Batting Average")
             {
-                lblResult.Text = "Batting Average: " + Math.Round(Convert.ToDouble(txtHits.Text) / Convert.ToDouble(txtAtBats.Text), 3);
+                lblBattingResult.Text = "Batting Average: " + Math.Round(Convert.ToDouble(txtHits.Text) / Convert.ToDouble(txtAtBats.Text), 3);
             }
             else
             {
-                lblResult.Text = "On-Base %: " + Math.Round((Convert.ToDouble(txtHits.Text) + Convert.ToDouble(txtWalks.Text) + Convert.ToDouble(txtHitByPitch.Text)) / Convert.ToDouble(txtAtBats.Text), 3);
+                lblBattingResult.Text = "On-Base %: " + Math.Round((Convert.ToDouble(txtHits.Text) + Convert.ToDouble(txtWalks.Text) + Convert.ToDouble(txtHitByPitch.Text)) / Convert.ToDouble(txtAtBats.Text), 3);
             }
         }
     }

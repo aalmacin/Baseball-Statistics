@@ -27,7 +27,7 @@
         Walks: <asp:TextBox runat="server" id="txtWalks"></asp:TextBox>
         <asp:CompareValidator ID="validatePositiveWalks" runat="server" ErrorMessage="Walks must be an integer with a positive value." 
             ControlToValidate="txtWalks" Operator="GreaterThanEqual" 
-            ValueToCompare="0" Display="Dynamic" Type="Integer"></asp:CompareValidator>
+            ValueToCompare="0" Display="Dynamic" Type="Double"></asp:CompareValidator>
         <asp:RequiredFieldValidator ID="validatePresenceWalks" runat="server" 
             ErrorMessage="Walks Required." ControlToValidate="txtWalks" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
@@ -48,10 +48,10 @@
         </asp:DropDownList>
     </div>
     <div>
-        <asp:Button runat="server" ID="btnCalculate" Text="Calculate" 
-            onclick="btnCalculate_Click" />
+        <asp:Button runat="server" ID="btnCalculateBatting" Text="Calculate" 
+            onclick="btnCalculateBatting_Click" />
     </div>
     <div>
-        <asp:Label ID="lblResult" runat="server"></asp:Label>
+        <asp:Label ID="lblBattingResult" runat="server"></asp:Label>
     </div>
 </asp:Content>

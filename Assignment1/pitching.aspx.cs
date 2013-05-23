@@ -13,5 +13,10 @@ namespace Assignment1
         {
 
         }
+
+        protected void btnCalculatePitching_Click(object sender, EventArgs e)
+        {
+            lblPitchingResult.Text = "ERA: " + Math.Round((Convert.ToDouble(txtEarnedRuns.Text) / Convert.ToDouble(txtInnings.Text)) * 9, 3);
+        }
     }
 }
