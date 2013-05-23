@@ -18,11 +18,11 @@ namespace Assignment1
         {
             if (dllStatType.SelectedValue == "Batting Average")
             {
-                lblResult.Text = "Batting Average";
+                lblResult.Text = "Batting Average: " + Math.Round(Convert.ToDouble(txtHits.Text) / Convert.ToDouble(txtAtBats.Text), 3);
             }
             else
             {
-                lblResult.Text = "On-Base Percentage";
+                lblResult.Text = "On-Base %: " + Math.Round((Convert.ToDouble(txtHits.Text) + Convert.ToDouble(txtWalks.Text) + Convert.ToDouble(txtHitByPitch.Text)) / Convert.ToDouble(txtAtBats.Text), 3);
             }
         }
     }

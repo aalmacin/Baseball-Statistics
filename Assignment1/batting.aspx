@@ -18,7 +18,7 @@
             Display="Dynamic" Type="Integer"></asp:CompareValidator>
         <asp:CompareValidator ID="validateHitsLessThanAtBats" runat="server" ErrorMessage="Number of hits cannot be greater than at bats." 
             ControlToValidate="txtHits" Operator="LessThanEqual" 
-            ControlToCompare="txtAtBats" Display="Dynamic"></asp:CompareValidator>
+            ControlToCompare="txtAtBats" Display="Dynamic" Type="Integer"></asp:CompareValidator>
         <asp:RequiredFieldValidator ID="validatePresenceHits" runat="server" 
             ErrorMessage="Hits Required." ControlToValidate="txtHits" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
