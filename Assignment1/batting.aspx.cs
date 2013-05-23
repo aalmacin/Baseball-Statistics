@@ -18,10 +18,11 @@ namespace Assignment1
         {
             if (dllStatType.SelectedValue == "Batting Average")
             {
+                lblResult.Text = "Batting Average";
             }
             else
             {
-
+                lblResult.Text = "On-Base Percentage";
             }
         }
     }

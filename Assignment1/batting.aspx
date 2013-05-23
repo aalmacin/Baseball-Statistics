@@ -47,6 +47,11 @@
             <asp:Listitem Value="On-Base %" Text="On-Base %"></asp:Listitem>
         </asp:DropDownList>
     </div>
-    <asp:Button runat="server" ID="btnCalculate" Text="Calculate" 
-        onclick="btnCalculate_Click" />
+    <div>
+        <asp:Button runat="server" ID="btnCalculate" Text="Calculate" 
+            onclick="btnCalculate_Click" />
+    </div>
+    <div>
+        <asp:Label ID="lblResult" runat="server"></asp:Label>
+    </div>
 </asp:Content>
