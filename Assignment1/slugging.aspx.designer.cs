@@ -40,6 +40,15 @@ namespace Assignment1 {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator validatePresenceAtBats;
         
         /// <summary>
+        /// labelCompareHitsToAtBats control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label labelCompareHitsToAtBats;
+        
+        /// <summary>
         /// txtSingles control.
         /// </summary>
         /// <remarks>
@@ -65,15 +74,6 @@ namespace Assignment1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator validatePresenceSingles;
-        
-        /// <summary>
-        /// validateSinglesLessThanAtBats control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validateSinglesLessThanAtBats;
         
         /// <summary>
         /// txtDoubles control.
@@ -103,15 +103,6 @@ namespace Assignment1 {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator validatePresenceDoubles;
         
         /// <summary>
-        /// validateDoublesLessThanAtBats control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validateDoublesLessThanAtBats;
-        
-        /// <summary>
         /// txtTriples control.
         /// </summary>
         /// <remarks>
@@ -139,15 +130,6 @@ namespace Assignment1 {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator validatePresenceTriples;
         
         /// <summary>
-        /// validateTriplesLessThanAtBats control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validateTriplesLessThanAtBats;
-        
-        /// <summary>
         /// txtHomeRuns control.
         /// </summary>
         /// <remarks>
@@ -173,15 +155,6 @@ namespace Assignment1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator validatePresenceHomeRuns;
-        
-        /// <summary>
-        /// validateHomeRunsLessThanAtBats control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validateHomeRunsLessThanAtBats;
         
         /// <summary>
         /// btnCalculateSlugging control.

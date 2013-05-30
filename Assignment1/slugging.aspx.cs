@@ -16,7 +16,26 @@ namespace Assignment1
 
         protected void btnCalculateSlugging_Click(object sender, EventArgs e)
         {
-            lblSluggingResult.Text = "Slugging: " + Math.Round(((Convert.ToDecimal(txtSingles.Text)) + (Convert.ToDecimal(txtDoubles.Text) * 2) + (Convert.ToDecimal(txtTriples.Text) * 3)) / (Convert.ToDecimal(txtAtBats.Text)), 3);
+            if (validateAllHitsCompareAtBats())
+            {
+                labelCompareHitsToAtBats.Visible = false;
+                double singles = Convert.ToDouble(txtSingles.Text);
+                double doubles = Convert.ToDouble(txtDoubles.Text) * 2;
+                double triples = Convert.ToDouble(txtTriples.Text) * 3;
+                double homeruns = Convert.ToDouble(txtHomeRuns.Text) * 4;
+                double atbats = Convert.ToDouble(txtAtBats.Text);
+                lblSluggingResult.Text = "Slugging: " + Math.Round(((singles + doubles + triples + homeruns) / atbats), 3);
+            }
+            else
+            {
+                labelCompareHitsToAtBats.Visible = true;
+                lblSluggingResult.Text = "";
+            }
+        }
+
+        public bool validateAllHitsCompareAtBats()
+        {
+            return (Convert.ToDouble(txtSingles.Text) + Convert.ToDouble(txtDoubles.Text) + Convert.ToDouble(txtTriples.Text) + Convert.ToDouble(txtHomeRuns.Text)) <= Convert.ToDouble(txtAtBats.Text);
         }
     }
 }

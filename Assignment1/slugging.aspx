@@ -10,6 +10,8 @@
         <asp:RequiredFieldValidator ID="validatePresenceAtBats" runat="server" 
             ErrorMessage="At Bats Required." ControlToValidate="txtAtBats" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
+        <asp:Label ID="labelCompareHitsToAtBats" runat="server" Display="Dynamic" Visible="false"
+            Text="At Bat's value must be greater than the values of hits."></asp:Label>
     </div>
     <div>
         Singles: <asp:TextBox runat="server" id="txtSingles"></asp:TextBox>
@@ -19,9 +21,6 @@
         <asp:RequiredFieldValidator ID="validatePresenceSingles" runat="server" 
             ErrorMessage="Singles Required." ControlToValidate="txtSingles" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="validateSinglesLessThanAtBats" runat="server" ErrorMessage="Number of singles cannot be greater than at bats." 
-            ControlToValidate="txtSingles" Operator="LessThanEqual" 
-            ControlToCompare="txtAtBats" Display="Dynamic" Type="Integer"></asp:CompareValidator>
     </div>
     <div>
         Doubles: <asp:TextBox runat="server" id="txtDoubles"></asp:TextBox>
@@ -31,9 +30,6 @@
         <asp:RequiredFieldValidator ID="validatePresenceDoubles" runat="server" 
             ErrorMessage="Doubles Required." ControlToValidate="txtDoubles" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="validateDoublesLessThanAtBats" runat="server" ErrorMessage="Number of Doubles cannot be greater than at bats." 
-            ControlToValidate="txtDoubles" Operator="LessThanEqual" 
-            ControlToCompare="txtAtBats" Display="Dynamic" Type="Integer"></asp:CompareValidator>
     </div>
     <div>
         Triples: <asp:TextBox runat="server" id="txtTriples"></asp:TextBox>
@@ -43,21 +39,15 @@
         <asp:RequiredFieldValidator ID="validatePresenceTriples" runat="server" 
             ErrorMessage="Triples Required." ControlToValidate="txtTriples" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="validateTriplesLessThanAtBats" runat="server" ErrorMessage="Number of Triples cannot be greater than at bats." 
-            ControlToValidate="txtTriples" Operator="LessThanEqual" 
-            ControlToCompare="txtAtBats" Display="Dynamic" Type="Integer"></asp:CompareValidator>
     </div>
     <div>
         HomeRuns: <asp:TextBox runat="server" id="txtHomeRuns"></asp:TextBox>
-        <asp:CompareValidator ID="validatePositiveHomeRuns" runat="server" ErrorMessage="HomeRuns must be an integer with a positive value." 
+        <asp:CompareValidator ID="validatePositiveHomeRuns" runat="server" ErrorMessage="Homeruns must be an integer with a positive value." 
             ControlToValidate="txtHomeRuns" Operator="GreaterThanEqual" 
             ValueToCompare="0" Display="Dynamic" Type="Double"></asp:CompareValidator>
         <asp:RequiredFieldValidator ID="validatePresenceHomeRuns" runat="server" 
             ErrorMessage="HomeRuns Required." ControlToValidate="txtHomeRuns" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="validateHomeRunsLessThanAtBats" runat="server" ErrorMessage="Number of HomeRuns cannot be greater than at bats." 
-            ControlToValidate="txtHomeRuns" Operator="LessThanEqual" 
-            ControlToCompare="txtAtBats" Display="Dynamic" Type="Integer"></asp:CompareValidator>
     </div>
     <div>
         <asp:Button runat="server" ID="btnCalculateSlugging" Text="Calculate" 
