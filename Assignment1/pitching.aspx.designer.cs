@@ -28,7 +28,7 @@ namespace Assignment1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveInnings;
+        protected global::System.Web.UI.WebControls.RangeValidator validatePositiveInnings;
         
         /// <summary>
         /// validatePresenceInnings control.
@@ -49,13 +49,13 @@ namespace Assignment1 {
         protected global::System.Web.UI.WebControls.TextBox txtEarnedRuns;
         
         /// <summary>
-        /// validatePositiveEarnedRuns control.
+        /// validatePositiveEarned Runs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveEarnedRuns;
+        protected global::System.Web.UI.WebControls.RangeValidator validatePositiveEarnedRuns;
         
         /// <summary>
         /// validatePresenceEarnedRuns control.

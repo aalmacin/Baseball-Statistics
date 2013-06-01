@@ -28,7 +28,7 @@ namespace Assignment1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveAtBats;
+        protected global::System.Web.UI.WebControls.RangeValidator validatePositiveAtBats;
         
         /// <summary>
         /// validatePresenceAtBats control.
@@ -64,7 +64,7 @@ namespace Assignment1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveSingles;
+        protected global::System.Web.UI.WebControls.RangeValidator validatePositiveSingles;
         
         /// <summary>
         /// validatePresenceSingles control.
@@ -91,7 +91,7 @@ namespace Assignment1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveDoubles;
+        protected global::System.Web.UI.WebControls.RangeValidator validatePositiveDoubles;
         
         /// <summary>
         /// validatePresenceDoubles control.
@@ -118,7 +118,7 @@ namespace Assignment1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveTriples;
+        protected global::System.Web.UI.WebControls.RangeValidator validatePositiveTriples;
         
         /// <summary>
         /// validatePresenceTriples control.
@@ -145,7 +145,7 @@ namespace Assignment1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveHomeRuns;
+        protected global::System.Web.UI.WebControls.RangeValidator validatePositiveHomeRuns;
         
         /// <summary>
         /// validatePresenceHomeRuns control.

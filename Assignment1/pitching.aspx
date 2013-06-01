@@ -4,18 +4,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         Innings: <asp:TextBox runat="server" id="txtInnings"></asp:TextBox>
-        <asp:CompareValidator ID="validatePositiveInnings" runat="server" ErrorMessage="Innings must be an integer with a positive value." 
-            ControlToValidate="txtInnings" Operator="GreaterThanEqual" 
-            ValueToCompare="0" Display="Dynamic" Type="Double"></asp:CompareValidator>
+        <asp:RangeValidator ID="validatePositiveInnings" Display="Dynamic" ControlToValidate="txtInnings" MaximumValue="9999"
+         MinimumValue="0" Type="Integer" runat="server" ErrorMessage="Innings must be an integer with a positive value."></asp:RangeValidator>
         <asp:RequiredFieldValidator ID="validatePresenceInnings" runat="server" 
             ErrorMessage="Innings Required." ControlToValidate="txtInnings" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
     </div>
     <div>
         Earned runs: <asp:TextBox runat="server" id="txtEarnedRuns"></asp:TextBox>
-        <asp:CompareValidator ID="validatePositiveEarnedRuns" runat="server" ErrorMessage="Earned runs must be an integer with a positive value." 
-            ControlToValidate="txtEarnedRuns" Operator="GreaterThanEqual" 
-            ValueToCompare="0" Display="Dynamic" Type="Double"></asp:CompareValidator>
+       <asp:RangeValidator ID="validatePositiveEarnedRuns" Display="Dynamic" ControlToValidate="txtEarnedRuns" MaximumValue="9999"
+         MinimumValue="0" Type="Integer" runat="server" ErrorMessage="Earned Runs must be an integer with a positive value."></asp:RangeValidator>
         <asp:RequiredFieldValidator ID="validatePresenceEarnedRuns" runat="server" 
             ErrorMessage="Earned Runs Required." ControlToValidate="txtEarnedRuns" 
             Display="Dynamic" ></asp:RequiredFieldValidator>

@@ -4,9 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         At Bats: <asp:TextBox runat="server" id="txtAtBats"></asp:TextBox>
-        <asp:CompareValidator ID="validatePositiveAtBats" runat="server" ErrorMessage="At Bats must be an integer with a positive value." 
-            ControlToValidate="txtAtBats" Operator="GreaterThanEqual" 
-            ValueToCompare="0" Display="Dynamic" Type="Integer"></asp:CompareValidator>
+        <asp:RangeValidator ID="validatePositiveAtBats" Display="Dynamic" ControlToValidate="txtAtBats" MaximumValue="9999"
+         MinimumValue="0" Type="Integer" runat="server" ErrorMessage="At Bats must be an integer with a positive value."></asp:RangeValidator>
         <asp:RequiredFieldValidator ID="validatePresenceAtBats" runat="server" 
             ErrorMessage="At Bats Required." ControlToValidate="txtAtBats" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
@@ -15,36 +14,32 @@
     </div>
     <div>
         Singles: <asp:TextBox runat="server" id="txtSingles"></asp:TextBox>
-        <asp:CompareValidator ID="validatePositiveSingles" runat="server" ErrorMessage="Singles must be an integer with a positive value." 
-            ControlToValidate="txtSingles" Operator="GreaterThanEqual" 
-            ValueToCompare="0" Display="Dynamic" Type="Double"></asp:CompareValidator>
+        <asp:RangeValidator ID="validatePositiveSingles" Display="Dynamic" ControlToValidate="txtSingles" MaximumValue="9999"
+         MinimumValue="0" Type="Integer" runat="server" ErrorMessage="Singles must be an integer with a positive value."></asp:RangeValidator>
         <asp:RequiredFieldValidator ID="validatePresenceSingles" runat="server" 
             ErrorMessage="Singles Required." ControlToValidate="txtSingles" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
     </div>
     <div>
-        Doubles: <asp:TextBox runat="server" id="txtDoubles"></asp:TextBox>
-        <asp:CompareValidator ID="validatePositiveDoubles" runat="server" ErrorMessage="Doubles must be an integer with a positive value." 
-            ControlToValidate="txtDoubles" Operator="GreaterThanEqual" 
-            ValueToCompare="0" Display="Dynamic" Type="Double"></asp:CompareValidator>
+        Doubles: <asp:TextBox runat="server" id="txtDoubles"></asp:TextBox> 
+        <asp:RangeValidator ID="validatePositiveDoubles" Display="Dynamic" ControlToValidate="txtDoubles" MaximumValue="9999"
+         MinimumValue="0" Type="Integer" runat="server" ErrorMessage="Doubles must be an integer with a positive value."></asp:RangeValidator>
         <asp:RequiredFieldValidator ID="validatePresenceDoubles" runat="server" 
             ErrorMessage="Doubles Required." ControlToValidate="txtDoubles" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
     </div>
     <div>
         Triples: <asp:TextBox runat="server" id="txtTriples"></asp:TextBox>
-        <asp:CompareValidator ID="validatePositiveTriples" runat="server" ErrorMessage="Triples must be an integer with a positive value." 
-            ControlToValidate="txtTriples" Operator="GreaterThanEqual" 
-            ValueToCompare="0" Display="Dynamic" Type="Double"></asp:CompareValidator>
+        <asp:RangeValidator ID="validatePositiveTriples" Display="Dynamic" ControlToValidate="txtTriples" MaximumValue="9999"
+         MinimumValue="0" Type="Integer" runat="server" ErrorMessage="Triples must be an integer with a positive value."></asp:RangeValidator>
         <asp:RequiredFieldValidator ID="validatePresenceTriples" runat="server" 
             ErrorMessage="Triples Required." ControlToValidate="txtTriples" 
             Display="Dynamic" ></asp:RequiredFieldValidator>
     </div>
     <div>
-        HomeRuns: <asp:TextBox runat="server" id="txtHomeRuns"></asp:TextBox>
-        <asp:CompareValidator ID="validatePositiveHomeRuns" runat="server" ErrorMessage="Homeruns must be an integer with a positive value." 
-            ControlToValidate="txtHomeRuns" Operator="GreaterThanEqual" 
-            ValueToCompare="0" Display="Dynamic" Type="Double"></asp:CompareValidator>
+        Home Runs: <asp:TextBox runat="server" id="txtHomeRuns"></asp:TextBox>
+        <asp:RangeValidator ID="validatePositiveHomeRuns" Display="Dynamic" ControlToValidate="txtHomeRuns" MaximumValue="9999"
+         MinimumValue="0" Type="Integer" runat="server" ErrorMessage="Home Runs must be an integer with a positive value."></asp:RangeValidator>
         <asp:RequiredFieldValidator ID="validatePresenceHomeRuns" runat="server" 
             ErrorMessage="HomeRuns Required." ControlToValidate="txtHomeRuns" 
             Display="Dynamic" ></asp:RequiredFieldValidator>

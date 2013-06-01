@@ -28,7 +28,7 @@ namespace Assignment1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveAtBats;
+        protected global::System.Web.UI.WebControls.RangeValidator validatePositiveAtBats;
         
         /// <summary>
         /// validatePresenceAtBats control.
@@ -55,7 +55,7 @@ namespace Assignment1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveHits;
+        protected global::System.Web.UI.WebControls.RangeValidator validatePositiveHits;
         
         /// <summary>
         /// validatePresenceHits control.
@@ -82,7 +82,7 @@ namespace Assignment1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveWalks;
+        protected global::System.Web.UI.WebControls.RangeValidator validatePositiveWalks;
         
         /// <summary>
         /// validatePresenceWalks control.
@@ -109,7 +109,7 @@ namespace Assignment1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator validatePositiveHitByPitch;
+        protected global::System.Web.UI.WebControls.RangeValidator validatePositiveHitByPitch;
         
         /// <summary>
         /// validatePresenceHitByPitch control.
